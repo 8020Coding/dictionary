@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121214;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxes-wrapper {
+  margin-top: 10rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.box-input {
+  width: 300px;
+  display: block;
+  height: 3rem;
+  font-size: 1.5rem;
+  background-color: #252427;
+  height: 100px;
+}
+
+[data-input] {
+  width: 100%;
+  height: fit-content;
+  padding: 2rem 2rem;
+  background-color: #252427;
+  color: #fff;
+
+  outline: none;
+}
+
+[data-input]::before {
+  content: 'Введите слово...';
+}
+
+[data-input]:focus-within::before {
+  content: '';
+}
+
+.empty-psuedo::before {
+  content: '';
+}
+
+.translate-box {
+  width: 300px;
+  background-color: #39393d;
+  padding: 1.5rem 1.5rem;
+  color: #fff;
+}
+
+[data-choose-lang] {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 6rem;
+  grid-auto-flow: column;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #5c5c61;
+  border-radius: 8px 8px 0 0;
+  color: #5c5c61;
+  font-size: 1.2rem;
+  background-color: #252427;
+}
+
+.material-symbols-outlined {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.material-symbols-outlined:hover {
+  color: #6c6c70;
+}
+
+.tr-wrapper {
+  width: 300px;
+  height: auto;
+  padding: 2rem 1rem;
+  justify-content: center;
+  float: right;
+  color: #fff;
+}
